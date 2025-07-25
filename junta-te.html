@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junta-te a nós – Clube EDP Guimarães</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="junta-te.html" class="active">Junta-te a nós</a>
+    </nav>
+  </header>
+  <main class="center-content">
+    <h1>Queres fazer parte do nosso clube?</h1>
+    <p>Por favor, assegura que selecionas <strong>“Delegação Guimarães”</strong> no campo correspondente antes de avançar.</p>
+    <button onclick="confirmarDelegacao()">Ir para o formulário</button>
+  </main>
+  <footer>
+    <p>© 2025 Clube do Pessoal EDP Guimarães</p>
+  </footer>
+  <script>
+    function confirmarDelegacao() {
+      const ok = confirm("⚠ Indica 'Delegação Guimarães' no campo 'Delegação a que pertence'. Continuar?");
+      if (ok) window.location.href = "https://clubeedp.pt/formulario-de-adesao/";
+    }
+  </script>
+</body>
+</html>
